@@ -1,6 +1,6 @@
 # Menu Items Example phpBB Extension
 
-This an Example of using the ["Menu Items"](https://github.com/marttiphpbb/menuitems) helper extension
+This an Example of using the ["Menu Items"](https://github.com/marttiphpbb/phpbb-ext-menuitems) helper extension
 
 ## Installation
 
