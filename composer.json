@@ -1,0 +1,27 @@
+{
+    "name": "marttiphpbb/menuitemsexample",
+    "type": "phpbb-extension",
+    "description": "Shows how to use the \"Menu Items\" extension",
+    "homepage": "https://github.com/marttiphpbb/phpbb-ext-menuitemsexample",
+    "version": "0.1.0",
+    "time": "2018-04-16",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Martti",
+            "email": "info@martti.be",
+            "homepage": "https://github.com/marttiphpbb",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "7.x",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Menu Items Example",
+        "soft-require": {
+            "phpbb/phpbb": "3.2.x,3.3"
+        }
+    }
+}

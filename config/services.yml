@@ -1,0 +1,17 @@
+
+services:
+    marttiphpbb.menuitemsexample.controller:
+        class: marttiphpbb\menuitemsexample\controller\main
+        arguments:
+            - '@controller.helper'
+            - '@template'
+            - '@language'
+
+    marttiphpbb.menuitemsexample.listener:
+        class: marttiphpbb\menuitemsexample\event\listener
+        arguments:
+            - '@controller.helper'
+            - '@language'
+            - '@auth'
+        tags:
+            - { name: event.listener }

@@ -1,0 +1,27 @@
+{%- extends '@marttiphpbb_menuitemsexample/base.html' -%}
+
+{%- block heading_1 -%}{{- lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB') -}}{%- endblock -%}
+
+{%- block content -%}
+	<fieldset>
+		{%- embed '@marttiphpbb_menuitems/dl.html' with {'name': 'github_menuitems'} -%}
+			{%- block label -%}
+				{{- lang('MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMS') -}}
+			{%- endblock -%}
+			{%- block explain -%}
+				<br>
+				{{- lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMS_EXPLAIN') -}}
+			{%- endblock -%}
+		{%- endembed -%}
+	
+		{%- embed '@marttiphpbb_menuitems/dl.html' with {'name': 'github_menuitemsexample'} -%}
+			{%- block label -%}
+				{{- lang('MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMSEXAMPLE') -}}
+			{%- endblock -%}
+			{%- block explain -%}
+				<br>
+				{{- lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMSEXAMPLE_EXPLAIN') -}}
+			{%- endblock -%}
+		{%- endembed -%}
+	</fieldset>
+{%- endblock content -%}

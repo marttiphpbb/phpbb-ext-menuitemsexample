@@ -1,0 +1,3 @@
+marttiphpbb_menuitemsexample_controller:
+    path: /menu-items-example-page/{page}
+    defaults: { _controller: marttiphpbb.menuitemsexample.controller:handle }
