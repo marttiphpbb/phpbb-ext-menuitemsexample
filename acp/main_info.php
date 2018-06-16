@@ -1,11 +1,8 @@
 <?php
 /**
- *
- * Menu Items Example. An extension for the phpBB Forum Software package.
- *
+ * phpBB extension Menu Items Example
  * @copyright (c) 2018, Martti, https://github.com/marttiphpbb
  * @license GNU General Public License, version 2 (GPL-2.0)
- *
  */
 
 namespace marttiphpbb\menuitemsexample\acp;
@@ -32,7 +29,7 @@ class main_info
 					'title'	=> 'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB',
 					'auth'	=> 'ext_marttiphpbb/menuitemsexample && acl_a_board',
 					'cat'	=> ['ACP_MARTTIPHPBB_MENUITEMSEXAMPLE']
-				],				
+				],
 			],
 		];
 	}

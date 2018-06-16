@@ -1,11 +1,8 @@
 <?php
 /**
- *
- * Menu Items Example. An extension for the phpBB Forum Software package.
- *
+ * phpBB extension Menu Items Example
  * @copyright (c) 2018, Martti, https://github.com/marttiphpbb
  * @license GNU General Public License, version 2 (GPL-2.0)
- *
  */
 
 if (!defined('IN_PHPBB'))

@@ -1,11 +1,8 @@
 <?php
 /**
- *
- * Menu Items Example. An extension for the phpBB Forum Software package.
- *
+ * phpBB Extension Menu Items Example
  * @copyright (c) 2018, Martti, https://github.com/marttiphpbb
  * @license GNU General Public License, version 2 (GPL-2.0)
- *
  */
 
 if (!defined('IN_PHPBB'))
@@ -26,14 +23,14 @@ $lang = array_merge($lang, [
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SECRET_USER'		=> 'Secret user link placement',
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_INTERNAL'		=> 'Internal link placement',
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB'		=> 'Github link placement',
-	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_EXPLAIN'		=> 
+	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_EXPLAIN'		=>
 		'This extension is just a demonstration of using the "Menu Links" helper extension',
 
-	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMS_EXPLAIN'	=> 
+	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMS_EXPLAIN'	=>
 		'Place links to the "Menu Links" repository on Github.',
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMSEXAMPLE_EXPLAIN' =>
 		'Place links to the "Menu Links Example" repository on Github.',
-	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SECRET_USER_EXPLAIN'	=> 
+	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SECRET_USER_EXPLAIN'	=>
 		'This link to the "user-secret" Font Awesome icon will only be visible to admins',
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SQUARE_EXPLAIN'	=>
 		'Place menu links to the "Square" page.',

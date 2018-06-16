@@ -1,11 +1,8 @@
 <?php
 /**
- *
- * Menu Items Example. An extension for the phpBB Forum Software package.
- *
+ * phpBB extension  Menu Items Example
  * @copyright (c) 2018, Martti, https://github.com/marttiphpbb
  * @license GNU General Public License, version 2 (GPL-2.0)
- *
  */
 
 namespace marttiphpbb\menuitemsexample\controller;
@@ -17,20 +14,10 @@ use \Symfony\Component\HttpFoundation\Response;
 
 class main
 {
-	/** @var helper */
 	private $helper;
-
-	/** @var template */
 	private $template;
-
-	/** @var language */
 	private $language;
 
-	/**
-	 * @param helper
-	 * @param template
-	 * @param language
-	 */
 	public function __construct(helper $helper, template $template, language $language)
 	{
 		$this->helper = $helper;
@@ -38,10 +25,6 @@ class main
 		$this->language = $language;
 	}
 
-	/**
-	 * @param string
-	 * @return Response
-	 */
 	public function handle($page):Response
 	{
 		$this->language->add_lang('page', 'marttiphpbb/menuitemsexample');

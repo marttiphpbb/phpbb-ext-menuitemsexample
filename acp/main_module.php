@@ -1,11 +1,8 @@
 <?php
 /**
- *
- * Menu Items Example. An extension for the phpBB Forum Software package.
- *
+ * phpBB extension Menu Items Example
  * @copyright (c) 2018, Martti, https://github.com/marttiphpbb
  * @license GNU General Public License, version 2 (GPL-2.0)
- *
  */
 
 namespace marttiphpbb\menuitemsexample\acp;
@@ -39,7 +36,7 @@ class main_module
 				}
 
 				$menuitems_acp = $phpbb_container->get('marttiphpbb.menuitems.acp');
-	
+
 				$this->tpl_name = 'secret_user';
 				$this->page_title = $language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SECRET_USER');
 
@@ -49,9 +46,9 @@ class main_module
 					{
 						trigger_error('FORM_INVALID', E_USER_WARNING);
 					}
-		
+
 					$menuitems_acp->process_form('marttiphpbb/menuitemsexample', 'secret_user');
-		
+
 					trigger_error($language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SETTING_SAVED') . adm_back_link($this->u_action));
 				}
 
@@ -63,9 +60,9 @@ class main_module
 				{
 					trigger_error('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_MENUITEMS_NOT_ENABLED', E_USER_WARNING);
 				}
-	
+
 				$menuitems_acp = $phpbb_container->get('marttiphpbb.menuitems.acp');
-				
+
 				$this->tpl_name = 'internal';
 				$this->page_title = $language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_INTERNAL');
 
@@ -75,11 +72,11 @@ class main_module
 					{
 						trigger_error('FORM_INVALID', E_USER_WARNING);
 					}
-		
+
 					$menuitems_acp->process_form('marttiphpbb/menuitemsexample', 'circle');
 					$menuitems_acp->process_form('marttiphpbb/menuitemsexample', 'square');
 					$menuitems_acp->process_form('marttiphpbb/menuitemsexample', 'bath');
-		
+
 					trigger_error($language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SETTING_SAVED') . adm_back_link($this->u_action));
 				}
 
@@ -91,9 +88,9 @@ class main_module
 				{
 					trigger_error('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_MENUITEMS_NOT_ENABLED', E_USER_WARNING);
 				}
-	
+
 				$menuitems_acp = $phpbb_container->get('marttiphpbb.menuitems.acp');
-				
+
 				$this->tpl_name = 'github';
 				$this->page_title = $language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB');
 
@@ -103,14 +100,14 @@ class main_module
 					{
 						trigger_error('FORM_INVALID', E_USER_WARNING);
 					}
-		
+
 					$menuitems_acp->process_form('marttiphpbb/menuitemsexample', 'github_menuitems');
 					$menuitems_acp->process_form('marttiphpbb/menuitemsexample', 'github_menuitemsexample');
-		
+
 					trigger_error($language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SETTING_SAVED') . adm_back_link($this->u_action));
 				}
 
-			break;			
+			break;
 		}
 
 		$menuitems_acp->assign_to_template('marttiphpbb/menuitemsexample');

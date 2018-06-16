@@ -1,11 +1,8 @@
 <?php
 /**
- *
- * Menu Items Example. An extension for the phpBB Forum Software package.
- *
+ * phpBB extension Menu Items Example
  * @copyright (c) 2018, Martti, https://github.com/marttiphpbb
  * @license GNU General Public License, version 2 (GPL-2.0)
- *
  */
 
 namespace marttiphpbb\menuitemsexample\event;
@@ -18,36 +15,24 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
+	private $helper;
+	private $language;
+	private $php_ext;
+	private $auth;
+
+	public function __construct(helper $helper, language $language, auth $auth)
+	{
+		$this->helper   = $helper;
+		$this->language = $language;
+		$this->auth		= $auth;
+	}
+
 	static public function getSubscribedEvents()
 	{
 		return [
 			'core.user_setup'						=> 'core_user_setup',
 			'marttiphpbb.menuitems.add_items'		=> 'marttiphpbb_menuitems_add_items',
 		];
-	}
-
-	/** @var helper */
-	private $helper;
-
-	/** @var language */
-	private $language;
-
-	/** @var string phpEx */
-	private $php_ext;
-
-	/** @var auth */
-	private $auth;
-
-	/**
-	 * @param helper
-	 * @param language
-	 * @param auth
-	 */
-	public function __construct(helper $helper, language $language, auth $auth)
-	{
-		$this->helper   = $helper;
-		$this->language = $language;
-		$this->auth		= $auth;
 	}
 
 	public function core_user_setup(event $event)
@@ -69,7 +54,7 @@ class listener implements EventSubscriberInterface
 
 		$items['marttiphpbb/menuitemsexample'] = [
 			'bath'	=> [
-				'raw'		=> '<i class="fa fa-bath"></i> ' . $this->language->lang('MARTTIPHPBB_MENUITEMSEXAMPLE_BATH'), 
+				'raw'		=> '<i class="fa fa-bath"></i> ' . $this->language->lang('MARTTIPHPBB_MENUITEMSEXAMPLE_BATH'),
 				'link' 		=> $this->helper->route('marttiphpbb_menuitemsexample_controller', ['page' => 'bath']),
 			],
 			'square'	=> [
@@ -110,7 +95,7 @@ class listener implements EventSubscriberInterface
 				]
 			],
 		];
-	
+
 		$event['items'] = $items;
 	}
 }
