@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "Shows how to use the \"Menu Items\" extension",
     "homepage": "https://github.com/marttiphpbb/phpbb-ext-menuitemsexample",
-    "version": "0.1.0",
-    "time": "2018-04-16",
+    "version": "0.1.1",
+    "time": "2018-06-19",
     "license": "GPL-2.0-only",
     "authors": [
         {
@@ -22,6 +22,11 @@
         "display-name": "Menu Items Example",
         "soft-require": {
             "phpbb/phpbb": "3.2.x,3.3"
-        }
+        },
+		"version-check": {
+			"host": "marttiphpbb.github.io",
+			"directory": "/version",
+			"filename": "menuitemsexample.json"
+		}
     }
 }
