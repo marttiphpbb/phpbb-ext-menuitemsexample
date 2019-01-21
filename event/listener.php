@@ -50,11 +50,12 @@ class listener implements EventSubscriberInterface
 		$items = $event['items'];
 
 		/** The menu items will appear in the order you add them */
-		/** Menu items with keys not enabled in the ACP will be ignored */
+		/** Menu items keys not enabled in the ACP will be ignored */
+		/** "include" and "link" are required, "var" is optional */
 
 		$items['marttiphpbb/menuitemsexample'] = [
 			'bath'	=> [
-				'raw'		=> '<i class="fa fa-bath"></i> ' . $this->language->lang('MARTTIPHPBB_MENUITEMSEXAMPLE_BATH'),
+				'include'	=> '@marttiphpbb_menuitemsexample/menu/square.html',
 				'link' 		=> $this->helper->route('marttiphpbb_menuitemsexample_controller', ['page' => 'bath']),
 			],
 			'square'	=> [

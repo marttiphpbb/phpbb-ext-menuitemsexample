@@ -24,18 +24,18 @@ class main_module
 		$template = $phpbb_container->get('template');
 		$ext_manager = $phpbb_container->get('ext.manager');
 
+		if (!$ext_manager->is_enabled('marttiphpbb/menuitems'))
+		{
+			trigger_error('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_MENUITEMS_NOT_ENABLED', E_USER_WARNING);
+		}
+
+		$menuitems_acp = $phpbb_container->get('marttiphpbb.menuitems.acp');
+
 		add_form_key('marttiphpbb/menuitemsexample');
 
 		switch($mode)
 		{
 			case 'secret_user':
-
-				if (!$ext_manager->is_enabled('marttiphpbb/menuitems'))
-				{
-					trigger_error('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_MENUITEMS_NOT_ENABLED', E_USER_WARNING);
-				}
-
-				$menuitems_acp = $phpbb_container->get('marttiphpbb.menuitems.acp');
 
 				$this->tpl_name = 'secret_user';
 				$this->page_title = $language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SECRET_USER');
@@ -55,13 +55,6 @@ class main_module
 			break;
 
 			case 'internal':
-
-				if (!$ext_manager->is_enabled('marttiphpbb/menuitems'))
-				{
-					trigger_error('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_MENUITEMS_NOT_ENABLED', E_USER_WARNING);
-				}
-
-				$menuitems_acp = $phpbb_container->get('marttiphpbb.menuitems.acp');
 
 				$this->tpl_name = 'internal';
 				$this->page_title = $language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_INTERNAL');
@@ -83,13 +76,6 @@ class main_module
 			break;
 
 			case 'github':
-
-				if (!$ext_manager->is_enabled('marttiphpbb/menuitems'))
-				{
-					trigger_error('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_MENUITEMS_NOT_ENABLED', E_USER_WARNING);
-				}
-
-				$menuitems_acp = $phpbb_container->get('marttiphpbb.menuitems.acp');
 
 				$this->tpl_name = 'github';
 				$this->page_title = $language->lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB');
