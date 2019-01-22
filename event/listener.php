@@ -30,8 +30,8 @@ class listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return [
-			'core.user_setup'						=> 'core_user_setup',
-			'marttiphpbb.menuitems.add_items'		=> 'marttiphpbb_menuitems_add_items',
+			'core.user_setup'		=> 'core_user_setup',
+			'marttiphpbb.menuitems'	=> 'marttiphpbb_menuitems',
 		];
 	}
 
@@ -45,7 +45,7 @@ class listener implements EventSubscriberInterface
 		$event['lang_set_ext'] = $lang_set_ext;
 	}
 
-	public function marttiphpbb_menuitems_add_items(event $event)
+	public function marttiphpbb_menuitems(event $event)
 	{
 		$items = $event['items'];
 
@@ -55,7 +55,7 @@ class listener implements EventSubscriberInterface
 
 		$items['marttiphpbb/menuitemsexample'] = [
 			'bath'	=> [
-				'include'	=> '@marttiphpbb_menuitemsexample/menu/square.html',
+				'include'	=> '@marttiphpbb_menuitemsexample/menu/bath.html',
 				'link' 		=> $this->helper->route('marttiphpbb_menuitemsexample_controller', ['page' => 'bath']),
 			],
 			'square'	=> [

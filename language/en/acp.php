@@ -25,7 +25,7 @@ $lang = array_merge($lang, [
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB'		=> 'Github link placement',
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_EXPLAIN'		=>
 		'This extension is just a demonstration of using the "Menu Links" helper extension.
-		With the "priority" setting you can define the order of menu items in the same template event.',
+		With the "priority" setting you can define the order of menu items in the same template event (location).',
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMS_EXPLAIN'	=>
 		'Place links to the "Menu Links" repository on Github.',
 	'ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_GITHUB_MENUITEMSEXAMPLE_EXPLAIN' =>
