@@ -1,7 +1,7 @@
 <?php
 /**
  * phpBB Extension Menu Items Example
- * @copyright (c) 2018, Martti, https://github.com/marttiphpbb
+ * @copyright (c) 2018 - 2019, Martti, https://github.com/marttiphpbb
  * @license GNU General Public License, version 2 (GPL-2.0)
  */
 
