@@ -6,25 +6,25 @@
 
 {%- block content -%}
 	<fieldset>
-		{%- embed '@marttiphpbb_menuitems/dl.html' with {'name': 'bath'} -%}
+		{%- embed '@marttiphpbb_menuitems/dl_table.html' with {'name': 'bath'} -%}
 			{%- block label -%}
 				{{- lang('MARTTIPHPBB_MENUITEMSEXAMPLE_BATH') -}}
 			{%- endblock -%}
 		{%- endembed -%}
-	
-		{%- embed '@marttiphpbb_menuitems/dl.html' with {'name': 'square'} -%}
+
+		{%- embed '@marttiphpbb_menuitems/dl_table.html' with {'name': 'square'} -%}
 			{%- block label -%}
-				{{- lang('MARTTIPHPBB_MENUITEMSEXAMPLE_SQUARE') -}}	
+				{{- lang('MARTTIPHPBB_MENUITEMSEXAMPLE_SQUARE') -}}
 			{%- endblock -%}
 			{%- block explain -%}
 				<br>
-				{{- lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SQUARE_EXPLAIN') -}}	
+				{{- lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_SQUARE_EXPLAIN') -}}
 			{%- endblock -%}
 		{%- endembed -%}
 
-		{%- embed '@marttiphpbb_menuitems/dl.html' with {'name': 'circle'} -%}
+		{%- embed '@marttiphpbb_menuitems/dl_table.html' with {'name': 'circle'} -%}
 			{%- block label -%}
-				{{- lang('MARTTIPHPBB_MENUITEMSEXAMPLE_CIRCLE') -}}			
+				{{- lang('MARTTIPHPBB_MENUITEMSEXAMPLE_CIRCLE') -}}
 			{%- endblock -%}
 		{%- endembed -%}
 	</fieldset>
