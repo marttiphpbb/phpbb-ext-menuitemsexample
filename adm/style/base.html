@@ -8,8 +8,11 @@
 
 {%- block heading_sub -%}
     <p>
-        {{- lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_EXPLAIN') -}}
-    </p>    
+        {{- lang('ACP_MARTTIPHPBB_MENUITEMSEXAMPLE_EXPLAIN',
+            '<a href="https://github.com/marttiphpbb/phpbb-ext-menuitems">',
+            '</a>')
+        -}}
+    </p>
 {%- endblock -%}
 
 <form id="acp_board" method="post" action="{U_ACTION}">
