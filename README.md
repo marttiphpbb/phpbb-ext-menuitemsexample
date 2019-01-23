@@ -4,6 +4,10 @@ This an Example of using the ["Menu Items"](https://github.com/marttiphpbb/phpbb
 
 [Topic on phpBB.com](https://www.phpbb.com/community/viewtopic.php?f=456&t=2468816)
 
+## Requirements
+
+Same as the ["Menu Items"](https://github.com/marttiphpbb/phpbb-ext-menuitems) extension
+
 ## Installation
 
 Copy the extension to phpBB/ext/marttiphpbb/menuitemsexample
